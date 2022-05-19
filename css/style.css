@@ -113,50 +113,13 @@ input[type="submit"]:hover{
 
 /* ------ Header fin ------ */
 
-/* ------ Main ------ */
+/* ------ Inicio Table Form ------ */
 
 
 table{
     width: 100%;
     table-layout: fixed;
     border-collapse: collapse;
-}
-
-
-thead th:nth-child(1) {
-  width: 15%;
-  text-align: center;
-  background-color: rgb(169, 165, 163,0.6);
-  border-radius: 35px 35px 0px 0px;
-}
-
-thead th:nth-child(2) {
-  width: 15%;
-  text-align: center;
-  background-color: rgb(169, 165, 163,0.6);
-  border-radius: 35px 35px 0px 0px;
-}
-
-thead th:nth-child(3) {
-  width: 15%;
-  text-align: center;
-  background-color: rgb(169, 165, 163,0.6);
-  border-radius: 35px 35px 0px 0px;
-}
-
-thead th:nth-child(4) {
-  width: 15%;
-  text-align: center;
-  background-color: rgb(169, 165, 163,0.6);
-  border-radius: 35px 35px 0px 0px;
-  border-color: white;
-}
-
-thead th:nth-child(5) {
-  width: 15%;
-  text-align: center;
-  background-color: rgb(169, 165, 163,0.6);
-  border-radius: 35px 35px 0px 0px;
 }
 
 tbody th:nth-child(1) {
@@ -230,9 +193,7 @@ tbody td{
     border-style: hidden;
     height: 50px;
 }
-
-
-/* ------ Main fin ------ */
+/* ------ Fin Table Form ------ */
 
 /* ------ Footer ------ */
 
@@ -242,6 +203,8 @@ footer.footer{
 }
 
 footer.footer .container{
+    max-width: 1280px;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     background: rgb(0, 0, 0,0.6);
@@ -330,7 +293,7 @@ input[type="button"]:hover{
     padding: 10px 0px 10px 0px;
     text-align: center;
     border-radius: 15px 15px 0px 0px;
-}
+    }
 
     .container form .user-details{
         max-height: 300px;
@@ -340,13 +303,27 @@ input[type="button"]:hover{
         width: 0;
     }
 
+    table{
+    width: 50%;
+    table-layout: auto;
+    border-collapse: collapse;
+    }
+
+    footer.footer .container{
+    max-width: 800px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: rgb(0, 0, 0,0.6);
+    }
+
 }
 
 
 
 @media (max-width:  584px){
     .container{
-        max-width: 50%;
+        width: 100%;
     }
 
     .textos-hero h1{
@@ -371,14 +348,22 @@ input[type="button"]:hover{
     padding: 10px 0px 10px 0px;
     text-align: center;
     border-radius: 15px 15px 0px 0px;
-}
+    }
 
     .container form .user-details{
         max-height: 300px;
         overflow-y: scroll;
     }
     .user-details::-webkit-scrollbar{
-        width: 0;
+        width: 10;
     }
+
+    footer.footer .container{
+        max-width: 800px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background: rgb(0, 0, 0,0.6);
+    
 
 }
