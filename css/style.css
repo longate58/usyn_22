@@ -73,8 +73,8 @@ body{
 }
 
 .wave-container{
-    width: 100%;
     max-width: 1280px;
+    width: 100%;
     overflow: hidden;
     margin: auto;
     padding: 0 0 10px 0;
@@ -268,7 +268,7 @@ input[type="button"]:hover{
 /* ---------x------- Footer ----------x---------- */
 @media (max-width:  800px){
     .container{
-        max-width: 70%;
+        max-width: 100%;
     }
 
     .textos-hero h1{
@@ -278,7 +278,7 @@ input[type="button"]:hover{
 
     form .user-details .input.box{
     margin-bottom: 15px;
-    width: 700%;
+    width: 100%;
     }
 
     form .gender-details .category{
@@ -321,7 +321,7 @@ input[type="button"]:hover{
 
 
 
-@media (max-width:  584px){
+@media (max-width:  550px){
     .container{
         width: 100%;
     }
@@ -358,8 +358,14 @@ input[type="button"]:hover{
         width: 10;
     }
 
+    table{
+    width: 30%;
+    table-layout: auto;
+    border-collapse: collapse;
+    }
+
     footer.footer .container{
-        max-width: 800px;
+        max-width: 500px;
         width: 100%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
