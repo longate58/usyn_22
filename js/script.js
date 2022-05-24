@@ -24,7 +24,7 @@ function generate() {
     margins = { top: 20, bottom: 20, left: 5, right: 5, width: 600 };
     
     doc.setLineWidth(2);
-    doc.text(300, y = y + 10, "POTENCIAL PROFESIONAL");
+    doc.text(300, y = y + 10, "");
     doc.setFontSize(18);
     doc.setTextColor(40);
     doc.setFontStyle('normal');
