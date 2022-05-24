@@ -1,9 +1,9 @@
-@import url('css/fonts.css');
+@import url('');
 
 *{
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	
 }
 
 html{
@@ -46,7 +46,7 @@ body{
 }
 
 .textos-hero h1{
-    font-size: 60px;
+    font-size: 50px;
 }
 
 .textos-hero p{
@@ -122,6 +122,12 @@ table{
     border-collapse: collapse;
 }
 
+img{
+    height: 100px;
+    width: 50%;
+}
+
+
 tbody th:nth-child(1) {
   width: 15%;
   text-align: center;
@@ -166,25 +172,6 @@ tbody tr .table1{
     border-radius: 5px 5px 0px 0px;
 }
 
-tbody tr .table2{
-    width: 800px;
-    background-color: rgb(0, 0, 0,0.6);
-    margin: auto;
-    color: #ffff;
-    padding: 10px 0px 10px 0px;
-    text-align: center;
-    border-radius: 5px 5px 0px 0px;
-}
-
-tbody tr .table3{
-    width: 800px;
-    background-color: rgb(0, 0, 0,0.6);
-    margin: auto;
-    color: #ffff;
-    padding: 10px 0px 10px 0px;
-    text-align: center;
-    border-radius: 5px 5px 0px 0px;
-}
 
 tbody td{
     padding: 10px;
@@ -266,64 +253,13 @@ input[type="button"]:hover{
 }
 
 /* ---------x------- Footer ----------x---------- */
-@media (max-width:  800px){
+
+@media 
+only screen and (max-width: 600px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
     .container{
         max-width: 100%;
-    }
-
-    .textos-hero h1{
-        font-size: 45px;
-    }
-
-
-    form .user-details .input.box{
-    margin-bottom: 15px;
-    width: 100%;
-    }
-
-    form .gender-details .category{
-    width: 100%;
-    }
-
-    form h2{
-    width: 450px;
-    background-color: rgb(0, 0, 0,0.6);
-    margin: auto;
-    color: #ffff;
-    padding: 10px 0px 10px 0px;
-    text-align: center;
-    border-radius: 15px 15px 0px 0px;
-    }
-
-    .container form .user-details{
-        max-height: 300px;
-        overflow-y: scroll;
-    }
-    .user-details::-webkit-scrollbar{
-        width: 0;
-    }
-
-    table{
-    width: 50%;
-    table-layout: auto;
-    border-collapse: collapse;
-    }
-
-    footer.footer .container{
-    max-width: 800px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    background: rgb(0, 0, 0,0.6);
-    }
-
-}
-
-
-
-@media (max-width:  550px){
-    .container{
-        width: 100%;
     }
 
     .textos-hero h1{
@@ -341,7 +277,7 @@ input[type="button"]:hover{
     }
 
     form h2{
-    width: 250px;
+    width: 350px;
     background-color: rgb(0, 0, 0,0.6);
     margin: auto;
     color: #ffff;
@@ -358,18 +294,81 @@ input[type="button"]:hover{
         width: 10;
     }
 
-    table{
-    width: 30%;
-    table-layout: auto;
-    border-collapse: collapse;
+     table, thead, tbody, th, td, tr { 
+        display: block; 
+    }
+
+    img{
+    height: 60px;
+    width: 15%;
+    }
+
+    tbody tr .table1{
+    width: 500px;
+    background-color: rgb(0, 0, 0,0.6);
+    margin: auto;
+    color: #ffff;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    border-radius: 5px 5px 0px 0px;
+    }
+
+    tbody th:nth-child(1){
+        width: 45%;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    tbody th:nth-child(2){
+        width: 45%;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    tbody th:nth-child(3){
+        width: 45%;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    tbody th:nth-child(4){
+        width: 45%;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    tbody th:nth-child(5){
+        width: 45%;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+
+    tbody td { 
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee; 
+        position: relative;
+        padding-left: 50%; 
+    }
+
+    tbody td:before { 
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 50%; 
+    padding-right: 10px; 
+    white-space: nowrap;
     }
 
     footer.footer .container{
-        max-width: 500px;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        background: rgb(0, 0, 0,0.6);
-    
+    max-width: 800px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: rgb(0, 0, 0,0.6);
+    }
+
+
 
 }
+
+
+
