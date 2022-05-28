@@ -25,10 +25,11 @@
 
 				<! ----RUTINA BUSCAR CEDULA---- >
 				<form action="#" class="form1">
-					<input type="search" placeholder="V-99.999.999" name="" required>
-					<input class="input"  type="submit" value="BUSCAR">
+					<input id='cedula' type="search" placeholder="insertar numero" name="" required>
+					<input class="input"  onclick="javascript:buscar();" type="submit" value="BUSCAR">
 				</form>
 				<! --------  FIN RUTINA BUSCAR CEDULA   -------- >
+
 			</div>
 			<div class="svg-hero" style="height: 150px; overflow: hidden;">
 		        <svg viewBox="0 0 300 150" preserveAspectRatio="none"
@@ -49,6 +50,7 @@
 						<thead></thead>
 						<tbody>
 							<tr><td class="table1" colspan="5">DATOS PERSONALES</td></tr>
+							
 							<tr><th>FOTO</th><th>NOMBRE Y APELLIDO</th><th>NUMERO DE CARNET</th><th>NUMERO SAP</th><th>NUMERO DE PERSONAL</th></tr>
 							<! -------- >
 							<tr><td data-titulo="FOTO: " id="F_USUARIO"><img src="img/BFotos/004975576.jpg">  </td> <td data-titulo="NOMBRE Y APELLIDO: "  id="D_USUARIO">Edgar R. Longat</td><td data-titulo="NUMERO DE CARNET:"  id="N_CARNET">603.289</td><td data-titulo="NUMERO SAP:"  id="N_SAP">04.008.779</td><td data-titulo="NUMERO DE PERSONAL:"  id="N_PERSONAL">16.011.623</td></td></tr>
@@ -75,7 +77,7 @@
 							<! -------- >   <! -------- >
 
 							<tr><td class="table1" colspan="5">CONOCIMIENTO Y CERTIFICACIONES</td></tr>
-							
+
 							<tr><th>NIVEL ACADEMICO</th><th>TITULO OBTENIDO</th><th>AÑO EXPEDICION</th><th>SERIAL REGISTRO</th><th>AÑO REGISTRO</th></tr>
 							<! -------- >
 							<tr><td data-titulo="NIVEL ACADEMICO:"  id="N_ACADEMICO">Técnico Superior Universitario</td><td data-titulo="TITULO OBTENIDO:"  id="T_OBTENIDO">Mercadotecnia</td><td data-titulo="AÑO EXPEDICION:"  id="A_EXPEDICION">1986</td><td data-titulo="SERIAL REGISTRO:"  id="S_REGISTRO">IS978AS1988RE</td><td data-titulo="AÑO REGISTRO:"  id="A_REGISTRO">1988</td></tr>
@@ -96,6 +98,7 @@
 							<! -------- >   <! -------- >
 
 							<tr><td class="table1" colspan="5">DATOS ORGANIZACION</td></tr> <br>
+							
 							<tr><th>SOCIEDAD</th><th>ORGANIZACION</th><th>EMPRESA/FILIA</th><th>DIRECCION EJECUTIVA</th><th>GERENCIA</th></tr>
 							<! -------- >
 							<tr><td data-titulo="SOCIEDAD:"  id="SOCIEDAD">HPDV</td><td data-titulo="ORGANIZACION:"   id="ORGANIZACIÓN">Petroleos de Venezuela</td><td data-titulo="EMPRESA/FILIA:"   id="E_FILIAL">Casa Matriz</td><td data-titulo="DIRECCION EJECUTIVA:"  id="D_EJECUTIVA">Recursos Humanos</td><td data-titulo="GERENCIA"  id="GERENCIA:">Planificacion, sistemas y normas</td></tr>
@@ -124,6 +127,7 @@
 							<! -------- >   <! -------- >
 
 							<tr><td class="table1" colspan="5">EXPERIENCIA LABORAL EXTERNA</td></tr> <br>
+							
 							<tr><th>EMPRESA</th><th>GERENCIA</th><th>CARGO</th><th>FECHA</th><th>TELEFONO</th></tr>
 							<! --- M U L T I P L E     E X T E R N A----- >
 							
@@ -181,3 +185,13 @@
 	</body>
 </html>
 
+<script language="javascript" type="text/javascript">
+	function Buscar(){
+		ced=document.getElementById("cedula").value
+		alert(ced);
+		document.getElementById("SOCIEDAD").value = POSTGRES.SOCIEDAD
+		document.getElementById("SOCIEDAD").value = POSTGRES.SOCIEDAD
+
+		return true;
+	}
+</script>
